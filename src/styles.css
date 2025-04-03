@@ -27,7 +27,7 @@
         @apply text-white uppercase hover:underline underline-offset-1 active:underline underline-offset-1 active:text-primary;
     }
 
-    p {
+    p, a {
         --font-dipsplay: "Roboto", sans-serif;
     }
 }
