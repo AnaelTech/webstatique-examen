@@ -17,7 +17,8 @@
           <nav aria-label="Global" class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
               <li>
-                <a class="uppercase" href="#"> Home</a>
+                <a class="uppercase" [routerLink]="['/']" routerLinkActive="underline text-primary" 
+                [routerLinkActiveOptions]="{exact: true}"> Home</a>
               </li>
   
               <li>
@@ -25,7 +26,8 @@
               </li>
   
               <li>
-                <a [routerLink]="['/tarif']" class="uppercase"> Our services </a>
+                <a [routerLink]="['/tarif']" routerLinkActive="underline text-primary" 
+                [routerLinkActiveOptions]="{exact: true}" class="uppercase"> Our services </a>
               </li>
   
               <li>
