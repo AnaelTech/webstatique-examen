@@ -19,15 +19,64 @@
         @apply bg-black;
     }
 
+    footer {
+        @apply bg-primary;
+    }
+
     h1, h2, h3, h4, h5, h6 {
-        font-family: "Poppins", sans-serif;
+        @apply  font-bold;
     }
 
     a {
-        @apply text-white uppercase hover:underline underline-offset-1 active:underline underline-offset-1 active:text-primary;
+        @apply text-white hover:underline underline-offset-1 active:underline underline-offset-1 active:text-primary;
     }
 
     p, a {
         --font-dipsplay: "Roboto", sans-serif;
     }
+
+}
+
+/*STYLE COMPONENTS*/
+
+@utility card
+{
+    @apply rounded-2xl h-100 border border-gray-200 p-12 shadow-xs sm:px-8 lg:p-8 bg-[url(http://unsplash.it/150/200?random&gravity=center)] bg-cover;
+
+    h3 {
+        @apply text-white text-xl
+    }
+
+    p {
+        @apply text-white text-xl lg:text-lg
+    }
+}
+
+@utility btn {
+    @apply cursor-pointer bg-white text-primary rounded-lg px-4 py-2 hover:text-white hover:border-2 border-white hover:bg-primary active:bg-actif;
+}
+
+
+@utility card-essentials {
+    @apply bg-white p-6 rounded-lg shadow-md hover:bg-primary;
+
+    div {
+        @apply mb-4 text-primary font-bold text-5xl group-hover:text-white;
+    }
+
+    h3 {
+        @apply text-xl font-semibold mb-3 group-hover:text-white;
+    }
+
+    p {
+        @apply text-text group-hover:text-white;
+    }
+}
+
+@utility card-tarifs {
+    @apply cursor-pointer rounded-2xl border border-title-card p-6 shadow-xs ring-1 ring-title-card sm:px-8 lg:py-12 hover:bg-primary hover:border-primary hover:ring-primary
+}
+
+@utility btn-tarifs{
+    @apply cursor-pointer flex justify-center no-underline bg-white text-primary rounded-lg border border-primary px-4 py-2;
 }
